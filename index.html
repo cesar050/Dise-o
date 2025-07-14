@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Evaluación de Usabilidad - Taller 2</title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        .page {
+            background-color: white;
+            width: 21cm;
+            min-height: 29.7cm;
+            padding: 2cm;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 1rem;
+        }
+        h1 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 22pt;
+            margin: 0;
+            color: #111;
+        }
+        h2 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 16pt;
+        }
+        h3 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 14pt;
+        }
+        p, li {
+            font-size: 12pt;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+        .info-table, .results-table, .interpretation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 11pt;
+        }
+        .info-table th, .info-table td, .results-table th, .results-table td, .interpretation-table th, .interpretation-table td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .info-table th, .results-table th, .interpretation-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .placeholder-text {
+            color: #888;
+            font-style: italic;
+        }
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        @media print {
+            body { background-color: white; padding: 0; }
+            .page { width: 100%; min-height: auto; box-shadow: none; padding: 0; margin: 0; }
+            .download-btn { display: none; }
+            h1, h2, h3 { page-break-after: avoid; }
+            table { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="download-btn" onclick="window.print()">Descargar como PDF / Imprimir</button>
+    
+    <div class="page">
+        <div class="header">
+            <!-- Opcional: Puedes añadir una URL al logo de la UNL aquí -->
+            <!-- <img src="URL_DEL_LOGO_UNL" alt="Logo UNL" style="height: 60px; margin-bottom: 10px;"> -->
+            <h1>Informe de Evaluación de Interfaces de Usuario</h1>
+            <p style="text-align: center; font-size: 14pt; margin-top: 10px;">Taller Nro. 2</p>
+        </div>
+        
+        <h2>A. Datos Informativos</h2>
+        <table class="info-table">
+            <tr>
+                <th style="width: 25%;">Asignatura:</th>
+                <td>Diseño de Software</td>
+            </tr>
+            <tr>
+                <th>Docente:</th>
+                <td>Lissette Geoconda López Faicán</td>
+            </tr>
+            <tr>
+                <th>Integrantes:</th>
+                <td class="placeholder-text">[Escribir aquí los nombres de los integrantes del grupo]</td>
+            </tr>
+            <tr>
+                <th>Ciclo / Semestre:</th>
+                <td>Cuarto</td>
+            </tr>
+             <tr>
+                <th>Período Académico:</th>
+                <td>Abril 2025 - Agosto 2025</td>
+            </tr>
+        </table>
+
+        <h2>B. Desarrollo</h2>
+        <h3>1. Desarrollo del test de evaluación</h3>
+        <p>Se desarrolló un test de evaluación de interfaces basado en los 10 principios de usabilidad de Jakob Nielsen. El artefacto final consiste en un formulario estandarizado que permite una evaluación cuantitativa y cualitativa de cualquier prototipo, con una escala de medición clara y una metodología de calificación del 0 al 100%. Este test fue el instrumento utilizado en la siguiente fase.</p>
+        
+        <h3>2. Aplicación del test a los prototipos</h3>
+        <h4>a. Resultados del test con la calificación final</h4>
+        <p>
+            La evaluación del prototipo "Nivel de Estrés Académico" de nuestros compañeros se llevó a cabo aplicando el test de evaluación heurística desarrollado. El test fue aplicado de forma metódica, explorando en profundidad las funcionalidades de "Gestionar encuestas" y "Responder encuesta". Cada uno de los 10 principios fue calificado en una escala de 1 a 5. Tras la interacción y el análisis de la interfaz, se obtuvieron los siguientes resultados consolidados:
+        </p>
+        <table class="results-table">
+            <thead>
+                <tr><th>Principio Heurístico</th><th style="text-align: center;">Calificación Obtenida (1-5)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1. Visibilidad del Estado del Sistema</td><td style="text-align: center;">5</td></tr>
+                <tr><td>2. Coincidencia con el Mundo Real</td><td style="text-align: center;">5</td></tr>
+                <tr><td>3. Control y Libertad del Usuario</td><td style="text-align: center;">5</td></tr>
+                <tr><td>4. Consistencia y Estándares</td><td style="text-align: center;">5</td></tr>
+                <tr><td>5. Prevención de Errores</td><td style="text-align: center;">5</td></tr>
+                <tr><td>6. Reconocimiento sobre Recuerdo</td><td style="text-align: center;">5</td></tr>
+                <tr><td>7. Flexibilidad y Eficiencia de Uso</td><td style="text-align: center;">5</td></tr>
+                <tr><td>8. Estética y Diseño Minimalista</td><td style="text-align: center;">5</td></tr>
+                <tr><td>9. Recuperación de Errores</td><td style="text-align: center;">5</td></tr>
+                <tr><td>10. Ayuda y Documentación</td><td style="text-align: center;">5</td></tr>
+                <tr><td style="text-align: right;"><strong>PUNTUACIÓN TOTAL</strong></td><td style="text-align: center;"><strong>50 / 50</strong></td></tr>
+                <tr><td style="text-align: right;"><strong>CALIFICACIÓN FINAL</strong></td><td style="text-align: center;"><strong>100%</strong></td></tr>
+            </tbody>
+        </table>
+        <p>
+            La calificación perfecta del 100% se justifica por la alta calidad y madurez del prototipo evaluado. La interfaz demostró ser excepcionalmente intuitiva y robusta. Se destacaron funcionalidades avanzadas que contribuyeron a la máxima puntuación, tales como una excelente retroalimentación al usuario (notificaciones), una gestión de estados clara (marcar como leído) y una prevención de errores efectiva (impedir responder dos veces la misma encuesta).
+        </p>
+
+        <h3>3. Resultados obtenidos de la evaluación</h3>
+        <h4>a. Limitaciones de la Propuesta del "Diseño de la Interfaz de Usuario"</h4>
+        <p>A pesar de la calificación perfecta obtenida en la evaluación heurística, es fundamental reconocer las limitaciones inherentes tanto al prototipo como al método de evaluación:</p>
+        <ul>
+            <li><strong>Limitación del Método de Evaluación:</strong> La evaluación heurística, aunque rigurosa, es una inspección realizada por expertos y no un test con usuarios finales reales. Por lo tanto, no mide factores clave como la satisfacción emocional o el tiempo de finalización de tareas en un escenario de estrés real.</li>
+            <li><strong>Escalabilidad no Probada:</strong> El prototipo funciona de manera impecable con una cantidad limitada de datos. No se pudo evaluar cómo se comportaría la interfaz en un escenario con cientos de encuestas o miles de estudiantes, lo cual podría presentar desafíos de rendimiento y presentación de información.</li>
+            <li><strong>Falta de Pruebas de Accesibilidad:</strong> La evaluación no incluyó un análisis formal de accesibilidad (normas WCAG). No se verificó si la interfaz es completamente usable por personas con discapacidades visuales (lectores de pantalla) o motoras (navegación por teclado).</li>
+        </ul>
+        
+        <h4>b. Recomendaciones de Mejora de la Propuesta</h4>
+        <p>Basándose en las limitaciones identificadas, se proponen las siguientes recomendaciones para la próxima iteración del diseño:</p>
+        <table class="interpretation-table">
+            <thead>
+                <tr>
+                    <th>Prioridad</th>
+                    <th>Recomendación</th>
+                    <th>Justificación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Alta</strong></td>
+                    <td>Realizar Pruebas de Usuario con Tareas Específicas</td>
+                    <td>Para validar si la alta usabilidad percibida se traduce en eficiencia y satisfacción en un contexto de uso real con estudiantes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Media</strong></td>
+                    <td>Diseñar y Probar la Escalabilidad de la Interfaz</td>
+                    <td>Asegurar que el diseño se mantendrá usable a medida que la plataforma crezca, añadiendo filtros, paginación o búsqueda a las listas.</td>
+                </tr>
+                <tr>
+                    <td><strong>Media</strong></td>
+                    <td>Incorporar una Auditoría de Accesibilidad</td>
+                    <td>Para garantizar que la herramienta cumple con los estándares WCAG y es usable por todos los estudiantes sin barreras.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>C. Conclusiones</h2>
+        <ol>
+            <li>
+                La aplicación rigurosa de los principios de usabilidad de Nielsen durante el diseño inicial es un factor determinante para el éxito de una interfaz. El prototipo evaluado, al obtener una calificación del 100%, demuestra que un enfoque centrado en la claridad, consistencia y prevención de errores resulta en una experiencia de usuario altamente intuitiva y eficaz.
+            </li>
+            <li>
+                Una evaluación heurística, aunque fundamental, constituye solo la primera fase de la validación de un diseño. A pesar del resultado perfecto, el análisis revela que la verdadera robustez de una interfaz solo puede ser confirmada a través de pruebas con usuarios finales y bajo condiciones realistas de escalabilidad y accesibilidad. La calificación heurística es una "luz verde" para proceder a métodos de prueba más avanzados, no el final del proceso.
+            </li>
+            <li>
+                La alta fidelidad funcional de un prototipo enriquece significativamente el proceso de evaluación. El hecho de que el prototipo evaluado incluyera lógica de negocio (notificaciones, estados, cálculo de resultados) permitió una evaluación mucho más profunda y significativa de principios como la "Visibilidad del estado del sistema" y la "Prevención de errores".
+            </li>
+        </ol>
+
+    </div>
+
+</body>
+</html>
